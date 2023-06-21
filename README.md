@@ -44,7 +44,7 @@ Knowledge about:
 
 ## Live Site
 
-[Link]( https://kadjialan.github.io/balance-page-js/)
+[Link]( https://kadjialan.github.io/Queen-attack-js/)
 
 ## Author
 

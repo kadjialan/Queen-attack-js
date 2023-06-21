@@ -86,7 +86,7 @@ body {
   transition: 0.3s;
 }
 
-.buttons__holder {
+.buttons-holder {
   height: 55px;
   display: flex;
   width: 285px;
@@ -110,6 +110,7 @@ h1 {
   .btn {
     width: 30px;
   }
+  
   h1 {
     font-size: 2rem;
   }
