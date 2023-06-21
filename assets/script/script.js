@@ -1,9 +1,9 @@
 const replay = document.querySelector(".restart");
-const message = document.querySelector(".messsage");
+const message = document.querySelector(".message");
 const square = document.querySelectorAll(".btn");
 
 let initial = 0;
-const selectedCell = [];
+const selectedSquare = [];
 
 replay.addEventListener("click", replayGame);
 
@@ -24,13 +24,15 @@ function Position() {
 
   if (initial == 0) {
     this.style.background = "gray";
-    selectedCell.push(id);
+    selectedSquare.push(parseInt(id));
+    console.log(selectedSquare);
     initial++;
   } else if (initial == 1) {
     this.style.background = "brown";
-    selectedCell.push(id);
+    selectedSquare.push(parseInt(id));
     initial++;
   } else {
-    alert("Only two squares can be selected");
+    message.style.color = "red";
+    message.textContent = "only two square can be selected";
   }
 }

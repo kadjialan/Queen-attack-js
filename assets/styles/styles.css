@@ -87,7 +87,7 @@ body {
 }
 
 .buttons__holder {
-  height: 70px;
+  height: 55px;
   display: flex;
   width: 300px;
   justify-content: space-between;
@@ -98,4 +98,10 @@ body {
 h1 {
   margin-bottom: 30px;
   font-size: 40px;
+}
+
+.message {
+  margin-top: 20px;
+  font-size: 23px;
+  font-family: sans-serif;
 }
