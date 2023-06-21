@@ -89,7 +89,7 @@ body {
 .buttons__holder {
   height: 55px;
   display: flex;
-  width: 300px;
+  width: 285px;
   justify-content: space-between;
   align-items: center;
   margin-top: 40px;
@@ -97,11 +97,24 @@ body {
 
 h1 {
   margin-bottom: 30px;
-  font-size: 40px;
+  font-size: 3rem;
 }
 
 .message {
   margin-top: 20px;
   font-size: 25px;
   font-family: sans-serif;
+}
+
+@media screen and (max-width: 425px) {
+  .btn {
+    width: 30px;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+
+  .message {
+    font-size: 20px;
+  }
 }

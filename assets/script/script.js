@@ -49,25 +49,27 @@ function Attack() {
   } else {
     const index1 = selectedSquare[0];
     const index2 = selectedSquare[1];
-  /*   console.log(selectedSquare, index1, index2);
- */
+    /*   console.log(selectedSquare, index1, index2);
+     */
     const unit11 = index1.split("", index1)[0];
     const unit12 = index1.split("", index1)[1];
 
     const unit21 = index2.split("", index2)[0];
     const unit22 = index2.split("", index2)[1];
 
-    console.log(unit11 - unit12);
-    console.log(unit21 - unit22);
+    const positionRightLeft = Math.abs(parseInt(index1) - parseInt(index2));
 
     if (unit11 === unit21) {
       message.textContent = `Queen attack sucessful ${correct}`;
     } else if (unit12 === unit22) {
       message.textContent = `Queen attack sucessful ${correct}`;
-    }  else if (unit11 - unit12 === unit21 - unit22) {
+    } else if (unit11 - unit12 === unit21 - unit22) {
       message.textContent = `Queen attack sucessful ${correct}`;
-  } else if(){
-    
-  }
+    } else if (positionRightLeft % 9 === 0) {
+      message.textContent = `Queen attack sucessful ${correct}`;
+    }else {
+      message.style.color = "red"
+      message.textContent = ` Oops! Queen attack failed ${wrong}`;
+    }
   }
 }
